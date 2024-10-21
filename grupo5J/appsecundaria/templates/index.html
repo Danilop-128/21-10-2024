@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
+    <title>López jaja</title>
+</head>
+<body>
+    <h1>hola mundo cruel</h1>
+    <h1>Daniela López</h1>
+    <hr> 
+        {% for i in misalumnos %}
+        <li> <a href="alumno/{{i.id}}">{{i.Nombre}}</a></li>
+        {% endfor %}
+    </hr>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
